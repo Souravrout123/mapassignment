@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState, useEffect } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -48,16 +50,13 @@ const WorldMap = () => {
           eventHandlers={{
             click: onCountryClick,
           }}
-          country={country} 
+          country={country}
         />
       ))}
 
       {selectedCountry && (
         <Popup
-          position={[
-            selectedCountry.latlng[0],
-            selectedCountry.latlng[1],
-          ]}
+          position={[selectedCountry.latlng[0], selectedCountry.latlng[1]]}
         >
           <CountryDetails country={selectedCountry} />
         </Popup>
@@ -67,5 +66,3 @@ const WorldMap = () => {
 };
 
 export default WorldMap;
-
-

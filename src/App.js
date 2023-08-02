@@ -4,7 +4,7 @@ import WorldMap from './Worldmap';
 function App() {
   return (
     <div className="App">
-   <h1>World map </h1>
+   <h1>World map using react </h1>
    <WorldMap />
     </div>
   );
